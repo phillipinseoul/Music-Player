@@ -15,6 +15,7 @@
         android:layout_marginTop="86dp"
         android:src="@drawable/music_image"
         app:civ_border_color="#000000"
+        android:id="@+id/circularImageView"
         />
 
     <Button
@@ -25,5 +26,34 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btn_play"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btn_play"
+        android:layout_toStartOf="@+id/btn_play"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pause"
+        />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btn_play"
+        android:layout_alignEnd="@+id/circularImageView"
+        android:layout_alignRight="@+id/circularImageView"
+        android:background="@drawable/stop"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
 
 </RelativeLayout>
